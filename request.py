@@ -2,6 +2,8 @@
 
 import requests
 
+
+
 def request():
     host = 'https://api.github.com/'
     endpoint = 'users/michaelrudy'
@@ -11,6 +13,6 @@ def request():
     response = requests.get(host+endpoint, headers=headers, auth=(username, token))
     print(response.json())
 
-    
+
 if __name__ == '__main__':
     request()
