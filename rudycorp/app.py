@@ -1,7 +1,7 @@
-from flask import Flask, render_template
-import os
+import json
+from rudycorp.utils import request
+from rudycorp import app, render_template
 
-app = Flask(__name__)
 info = {
     'name': 'The Rudy Corp.',
     'desc': """I am currently self-learning computer science and software development through research and development. 
@@ -15,25 +15,45 @@ info = {
 	'interests': """Deployment technologies, CI-CD pipelines, iOS application development using SwiftUI, writing optimized code (always in progress...)"""
 	}
 
-# TODO set up api request to github API to retrieve repos
-works = [
-	{
-	'title': 'Birdify iOS App',
-	'desc': "A scorecard app designed using SwiftUI and xCode with the eventual goal of providing meaningful analytics to golfers. I want to simplify and gamify the scorecard experience.",
-	'count': '001/006'
-	},
-	{
-	'title': 'test',
-	'desc': "A scorecard app designed using SwiftUI and xCode with the eventual goal of providing meaningful analytics to golfers. The goal behind this application was to simplify and gamify the scorecard experience.",
-	'count': '002/006'
-	}
-]
+
+# Github API request
+with open('/Users/michaelrudy/Desktop/Tokens/gh.txt', 'r') as in_file:
+        token = in_file.readlines()
+args = {
+        'host': 'https://api.github.com/',
+        'endpoint': 'users/michaelrudy/repos',
+        'headers': {"Accept": "application/vnd.github.inertia-preview+json"},
+        'username': 'michaelrudy',
+        'token': token[0],
+    }
+
+github_data = request(**args)
+
+# For Viewing Purposes
+with open('view.json', 'w') as output:
+	output.write(json.dumps(github_data, indent=4))
+
+# Github Parser
+works = []
+for proj in github_data:
+	works.append(
+		{
+			'title': proj['name'],
+			'url': proj['url'],
+			'short_desc': proj['description'],
+			'language': '' if proj['language'] is None else proj['language'],
+		}
+	)
+
+# For Viewing Purposes
+with open('works.json','w') as output:
+	output.write(json.dumps(works, indent=4))
 
 @app.route('/')
 def index():
 	return render_template('index.html', title='The Rudy Corp.', info=info)
 
-# routing converter
+
 @app.route('/<string:page_name>')
 def html_page(page_name):
     return render_template(page_name, info=info, works=works)

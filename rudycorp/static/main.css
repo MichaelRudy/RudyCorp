@@ -5929,7 +5929,8 @@ textarea {
     padding: 2rem 5rem;
     position: relative;
     width: 80%;
-    margin: -10em auto 20px
+    margin: -10em auto 20px;
+    height: 300px;
 }
 
 @media (max-width:992px) {

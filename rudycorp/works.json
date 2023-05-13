@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Birdify",
+        "url": "https://api.github.com/repos/MichaelRudy/Birdify",
+        "short_desc": "A scorecard app designed using SwiftUI and Xcode with the eventual goal of providing meaningful analytics to golfers. ",
+        "language": "Swift"
+    },
+    {
+        "title": "flask-portfolio-template",
+        "url": "https://api.github.com/repos/MichaelRudy/flask-portfolio-template",
+        "short_desc": "A portfolio template created with Flask, HTML, CSS and JS. Please feel free to fork for yourself!",
+        "language": ""
+    },
+    {
+        "title": "toLearn",
+        "url": "https://api.github.com/repos/MichaelRudy/toLearn",
+        "short_desc": "A set of topics that I am currently learning",
+        "language": ""
+    }
+]
