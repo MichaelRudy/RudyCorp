@@ -9,15 +9,16 @@ I opted to go with Flask due to its minimalist framework and then found a couple
 Thus far, I have created an endpoint that displays projects from my GitHub account using a developer token. When deployed, I want my web application to automatically render newly created repos, including the project's name, description, and language used.
 
 ### Visuals
-Home View
+
+## Home View
 <img src="/images/home.png">
 
-Work View
-<img src="/images/Work.png">
+## Work View
+<img src="/images/work.png">
 
-About View
+## About View
 <img src="/images/about.png">
 
-Contact View
+## Contact View
 <img src="/images/contact.png">
 
