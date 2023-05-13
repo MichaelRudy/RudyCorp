@@ -1,0 +1,9 @@
+README.md
+setup.py
+rudycorp/app.py
+rudycorp/utils.py
+rudycorp.egg-info/PKG-INFO
+rudycorp.egg-info/SOURCES.txt
+rudycorp.egg-info/dependency_links.txt
+rudycorp.egg-info/requires.txt
+rudycorp.egg-info/top_level.txt

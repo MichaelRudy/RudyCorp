@@ -15,10 +15,11 @@ info = {
 	'interests': """Deployment technologies, CI-CD pipelines, iOS application development using SwiftUI, writing optimized code (always in progress...)"""
 	}
 
+# TODO set up api request to github API to retrieve repos
 works = [
 	{
 	'title': 'Birdify iOS App',
-	'desc': "A scorecard app designed using SwiftUI and xCode with the eventual goal of providing meaningful analytics to golfers. The goal behind this application was to simplify and gamify the scorecard experience.",
+	'desc': "A scorecard app designed using SwiftUI and xCode with the eventual goal of providing meaningful analytics to golfers. I want to simplify and gamify the scorecard experience.",
 	'count': '001/006'
 	},
 	{

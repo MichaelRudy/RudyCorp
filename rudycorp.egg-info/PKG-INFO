@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: rudycorp
+Version: 0.0.1
+Summary: Personal website for deploying and displaying my projects, interests and hobbies.
+Author: Michael Rudy
+License: MIT
+Classifier: Programming Languag :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
