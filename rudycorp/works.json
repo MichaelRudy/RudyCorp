@@ -6,15 +6,9 @@
         "language": "Swift"
     },
     {
-        "title": "flask-portfolio-template",
-        "url": "https://api.github.com/repos/MichaelRudy/flask-portfolio-template",
-        "short_desc": "A portfolio template created with Flask, HTML, CSS and JS. Please feel free to fork for yourself!",
-        "language": ""
-    },
-    {
-        "title": "toLearn",
-        "url": "https://api.github.com/repos/MichaelRudy/toLearn",
-        "short_desc": "A set of topics that I am currently learning",
-        "language": ""
+        "title": "RudyCorp",
+        "url": "https://api.github.com/repos/MichaelRudy/RudyCorp",
+        "short_desc": "personal web application",
+        "language": "CSS"
     }
 ]

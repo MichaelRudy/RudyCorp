@@ -51,7 +51,7 @@ with open('works.json','w') as output:
 
 @app.route('/')
 def index():
-	return render_template('index.html', title='The Rudy Corp.', info=info)
+	return render_template('demo.html', title='The Rudy Corp.', info=info)
 
 
 @app.route('/<string:page_name>')
