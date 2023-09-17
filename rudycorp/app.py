@@ -3,7 +3,7 @@ from rudycorp.utils import request
 from rudycorp import app, render_template
 
 info = {
-    'name': 'The Rudy Corp.',
+    'name': 'Michael Rudy',
     'desc': """I am currently self-learning computer science and software development through research and development. 
     I have taken formal post-graduate courses at UPenn and Michigan State University. I am currently interested in bulding 
     a platform for scalable web-applications; a place to host all of my interests and projects.""",
@@ -12,7 +12,7 @@ info = {
 	Fast-forward a little, my passions and interests in computer science grew after spending a lot of time learning data analysis frameworks for automation. 
 	Professionally, I have built a number of cpu-intense post-processing toolkits; a long way of saying - Python multiprocessing, pooling, and mapping.
 	This led me into exploring scalable CI-CD pipelines, deployment archiecture, and other DevOps-related technologies.""",
-	'interests': """Deployment technologies, CI-CD pipelines, iOS application development using SwiftUI, writing optimized code (always in progress...)"""
+	'main_intro': "Self-learning computer science and software engineering through research and development."
 	}
 
 
